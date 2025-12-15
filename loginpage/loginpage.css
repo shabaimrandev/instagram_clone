@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;   /* centers vertically */
+    height: 100vh;  /* occupy 100% of view-port height */
+}
+
+input {
+    width: 300px;
+    height: 40px;
+}
+
+#login-btn {
+    background-color: #0095F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.line-container {
+    display: flex; /* Enables flexbox for horizontal alignment */
+    align-items: center; /* Vertically centers items within the container */
+    width: 100%; /* Ensures the container spans the full width */
+}
+
+.line {
+    flex-grow: 1; /* Allows the lines to expand and fill available space */
+    border-bottom: 1px solid #000; /* Creates the horizontal line */
+    margin: 0 10px; /* Adds horizontal spacing between lines and content */
+}
+
+.content-span {
+    white-space: nowrap; /* Prevents the text from wrapping */
+    padding: 0 5px; /* Adds padding around the text */
+}
